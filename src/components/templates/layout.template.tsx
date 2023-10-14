@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import type { MenuProps } from "antd";
 import { Layout, Menu, theme, Button, Typography } from "antd";
 import {
@@ -12,6 +12,7 @@ import {
   MessageOutlined,
 } from "@ant-design/icons";
 import CSS from "./layout.template.module.scss";
+import { Outlet, useNavigate } from "react-router-dom";
 
 const { Header, Content, Sider } = Layout;
 
@@ -34,16 +35,23 @@ function getItem(
 }
 
 const items: MenuItem[] = [
-  getItem("My Plans", "1", <FileTextOutlined />),
-  getItem("Claims", "2", <FileOutlined />),
-  getItem("FAQ", "3", <ExclamationCircleOutlined />),
-  getItem("Settings", "4", <SettingOutlined />),
-  getItem("Profile", "5", <UserOutlined />),
-  getItem("Support", "6", <MessageOutlined />),
+  getItem("My Plans", "/", <FileTextOutlined />),
+  getItem("Claims", "/claims", <FileOutlined />),
+  getItem("FAQ", "/faq", <ExclamationCircleOutlined />),
+  getItem("Settings", "/settings", <SettingOutlined />),
+  getItem("Profile", "/profile", <UserOutlined />),
+  getItem("Support", "/support", <MessageOutlined />),
 ];
 
 const LayoutContainer: React.FC = () => {
+  const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
+  const [currentActive, setCurrentActive] = useState("");
+
+  useEffect(() => {
+    console.log("object", "/" + window.location.pathname.split("/")[1]);
+    setCurrentActive("/" + window.location.pathname.split("/")[1]);
+  }, [window.location.pathname]);
 
   const toggleCollapsed = () => {
     setCollapsed(!collapsed);
@@ -52,6 +60,11 @@ const LayoutContainer: React.FC = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+
+  const handleMenu = (e: { key: string }) => {
+    console.log("e", e);
+    navigate(e.key);
+  };
 
   return (
     <Layout>
@@ -67,9 +80,9 @@ const LayoutContainer: React.FC = () => {
           collapsed={collapsed}
         >
           <Menu
+            onClick={(e) => handleMenu(e)}
             style={{ marginTop: 120, backgroundColor: "#2e1e5b" }}
-            defaultSelectedKeys={["1"]}
-            defaultOpenKeys={["sub1"]}
+            selectedKeys={[currentActive]}
             mode="inline"
             inlineCollapsed={collapsed}
             items={items}
@@ -85,7 +98,10 @@ const LayoutContainer: React.FC = () => {
               {!collapsed ? <LeftOutlined /> : <RightOutlined />}
             </div>
             {!collapsed && (
-              <Typography.Text type="secondary" className="cs-clr-fff cs-pointer">
+              <Typography.Text
+                type="secondary"
+                className="cs-clr-fff cs-pointer"
+              >
                 Collapse Menu
               </Typography.Text>
             )}
@@ -99,7 +115,9 @@ const LayoutContainer: React.FC = () => {
           </Button> */}
         </Sider>
         <Layout style={{ padding: "0 24px 24px" }}>
-          <Content>Content</Content>
+          <Content>
+            <Outlet />
+          </Content>
         </Layout>
       </Layout>
     </Layout>
