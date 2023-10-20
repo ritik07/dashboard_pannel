@@ -1,50 +1,18 @@
 import React from "react";
-import CSS from "./feedback-card.module.scss";
-import { Card, Col, Row, Space, Typography } from "antd";
-import { FolderOutlined, ArrowRightOutlined } from "@ant-design/icons";
-
+import NormalFeedbackCard from "./normal-feedback-card/normal-feedback-card";
+import FilledFeedbackCard from "./filled-feedback-card/filled-feedback-card";
 type Props = {
   title: string;
   text: string;
   onClick: () => void;
+  style: "filled" | "normal"
 };
 
 const FeedbackCard: React.FC<Props> = (props: Props) => {
   return (
-    <Row>
-      <Col xs={12}>
-        <Card
-          bordered={false}
-          className={CSS.container}
-          bodyStyle={{ display: "flex" }}
-        >
-          <div className={CSS["circular-card"]}>
-            <FolderOutlined style={{ fontSize: "3rem" }} />
-          </div>
-          <div className={CSS["data-container"]}>
-            <Space direction="vertical">
-              <Typography.Title
-                level={5}
-                style={{
-                  color: "#615BAE" /* ,lineHeight:"1",verticalAlign:"middle" */,
-                }}
-              >
-                {props.title}
-              </Typography.Title>
-              <Typography.Text
-                className="mt-4" /* style={{lineHeight:"1",verticalAlign:"middle"}} */
-              >
-                {props.text}
-              </Typography.Text>
-            </Space>
-          </div>
-          <ArrowRightOutlined
-            style={{ fontSize: "3rem", alignItems: "end", color: "#3374D2" }}
-            onClick={props.onClick}
-          />
-        </Card>
-      </Col>
-    </Row>
+    props.style === "normal" ? 
+    <NormalFeedbackCard title={props.title} text={props.text} onClick={props.onClick}/> : 
+    <FilledFeedbackCard title={props.title} text={props.text} onClick={props.onClick}/>
   );
 };
 

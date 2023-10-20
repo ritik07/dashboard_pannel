@@ -1,0 +1,21 @@
+@import "/src/styles/colors";
+
+.container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: $filledfeedbackCardColor;
+    color: white!important;
+}
+.title_text{
+    color: white!important;
+}
+.text{
+    color: white!important;
+}
+.feedback_arrow{
+    font-size: 3rem;
+    align-items: center;  
+    margin-left: auto;  
+}

@@ -1,9 +1,10 @@
 import React from "react";
 import CollapsibleCard from "../../components/collapsible-card/collapsible-card";
-import { Card, Col, Divider, Row, Space, Typography } from "antd";
+import { Col, Divider, Row } from "antd";
 import { InfoCircleOutlined } from "@ant-design/icons";
 import CSS from "./faq.module.scss";
 import FeedbackCard from "../../components/feedback-card/feedback-card";
+import PageHeader from "../../components/page-header/page-header";
 
 type Props = {};
 type CardData = {
@@ -46,83 +47,59 @@ const Faq = (props: Props) => {
   };
 
   return (
-    <React.Fragment>
-      <div
-        // split={<Divider style={{ margin: "0.5rem" }} />}
-        className={CSS.container}
-      >
-        <div className={CSS.header}>
-          <div className={CSS["header-title"]}>
-            <Space>
-              <div className={CSS["circular-card"]}>
-                <InfoCircleOutlined style={{ fontSize: "1.7rem" }} />
-              </div>
-              <Typography.Title
-                level={3}
-                className="mr-2"
-                style={{ color: "#34D370" }}
-              >
-                FAQ
-              </Typography.Title>
-            </Space>
-          </div>
-          <div
-            className={CSS["header-description"]}
-            style={{ marginLeft: "2.5rem" }}
-          >
-            <Typography.Text style={{ color: "#888" }}>
-              Answers to many frequently asked questions
-            </Typography.Text>
-          </div>
-          <Divider className="cs-tm-20" />
-        </div>
-
-        <div className={CSS.body}>
-          <Row gutter={[20, 20]}>
-            <Col xs={12}>
-              <Row>
-                {col1data.map((cardItem) => {
-                  return (
-                    <Col xs={24} className="cs-bm-20">
-                      <CollapsibleCard
-                        key={cardItem.Key}
-                        title={cardItem.Title}
-                        text={cardItem.Text}
-                      />
-                    </Col>
-                  );
-                })}
-              </Row>
-            </Col>
-            <Col xs={12}>
-              <Row>
-                {col2data.map((cardItem) => {
-                  return (
-                    <Col xs={24} className="cs-bm-20">
-                      <CollapsibleCard
-                        key={cardItem.Key}
-                        title={cardItem.Title}
-                        text={cardItem.Text}
-                      />
-                    </Col>
-                  );
-                })}
-              </Row>
-            </Col>
-          </Row>
-        </div>
-
-        <div className={CSS.footer}>
-          <FeedbackCard
-            title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
-            text={
-              "Sed laoreet cursus lacus sed faucibus. Vestibulum eget sapien pulvinar, sodales dui a, pulvinar sem."
-            }
-            onClick={handleOnFeedbackClick}
-          />
-        </div>
+    <div className={CSS.container}>
+      <PageHeader Icon={InfoCircleOutlined} Title="FAQ" Description="Answers to many frequenlty asked questions" />
+      <Divider className="cs-tm-20" />
+      <div className={CSS.body}>
+        <Row gutter={[20, 20]}>
+          <Col xs={12}>
+            <Row>
+              {col1data.map((cardItem, index) => {
+                return (
+                  <Col key={index} xs={24} className="cs-bm-20">
+                    <CollapsibleCard
+                      key={cardItem.Key}
+                      title={cardItem.Title}
+                      text={cardItem.Text}
+                    />
+                  </Col>
+                );
+              })}
+            </Row>
+          </Col>
+          <Col xs={12}>
+            <Row>
+              {col2data.map((cardItem, index) => {
+                return (
+                  <Col key={index} xs={24} className="cs-bm-20">
+                    <CollapsibleCard
+                      key={cardItem.Key}
+                      title={cardItem.Title}
+                      text={cardItem.Text}
+                    />
+                  </Col>
+                );
+              })}
+            </Row>
+          </Col>
+        </Row>
       </div>
-    </React.Fragment>
+      <Divider className="cs-tm-20" />
+      <div className={CSS.footer}>
+        <Row>
+          <Col xs={12}>
+            <FeedbackCard
+              title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+              text={
+                "Sed laoreet cursus lacus sed faucibus. Vestibulum eget sapien pulvinar, sodales dui a, pulvinar sem."
+              }
+              onClick={handleOnFeedbackClick}
+              style="normal"
+            />
+          </Col>
+        </Row>
+      </div>
+    </div>
   );
 };
 

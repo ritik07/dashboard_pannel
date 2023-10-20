@@ -1,5 +1,7 @@
+@import "/src/styles/functions";
+
 .layout_collapse_btn_container {
   position: absolute;
-  bottom: 30px;
-  left: 20px;
+  bottom: pxToRem(30);
+  left: pxToRem(20);
 }

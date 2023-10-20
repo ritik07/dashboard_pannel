@@ -1,0 +1,15 @@
+@import "/src/styles/colors";
+
+.header_title{
+    display: flex;
+    color: $headingColor!important;    
+}
+.header_title_text{
+    color: $headingColor!important;
+}
+.header_description{
+    margin-left: 3.2rem
+}
+.header_description_text{
+    color: $mutedColor
+}

@@ -1,44 +1,26 @@
 @import "/src/styles/functions";
+@import "/src/styles/colors";
 
 .container {
     padding: 0;
     margin: 0;
     width: 100%;
 }
-
-.text-container {
+.text_container{
     display: flex;
     align-items: center;
+    margin-left: 2.5rem;
 }
 
-.text-block {
+.text_block {
     margin: 0;
     padding: 0;
-    border-left: pxToRem(2) solid #34D370;
+    border-left: pxToRem(2) solid $headingColor;
     padding-left: 1rem;
-    /*    line-height: 1;
-    vertical-align: middle; */
 }
 
 
 .icon {
-    color: #34D370;
+    color: $headingColor;
     margin-right: pxToRem(10);
 }
-
-// @media only screen and (max-width: 1024px) {
-//     .container{
-//         width: 300px;
-//     }
-// }
-
-// @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-//     .container{
-//         width: 450px;
-//     }
-// }
-// @media only screen and (min-width: 1441px) {
-//     .container{
-//         width: 500px;
-//     }
-// }
