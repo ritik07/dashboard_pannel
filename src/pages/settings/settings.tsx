@@ -62,7 +62,7 @@ const Settings = () => {
     console.log("Feedback button clicked")
   }
   return (
-    <div className="m-20">
+    <div className={CSS.container}>
       <PageHeader Icon={SettingOutlined} Title="Lorems" Description="Velita" />
       <Divider className="cs-tm-20" />
       <div className="mt-10 mb-10">

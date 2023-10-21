@@ -16,7 +16,7 @@ body {
 }
 
 .cs-color-primary {
-  color: #5555f1 !important;
+  color: #12b24e !important;
 }
 
 .cs-color-primary-1 {
@@ -70,6 +70,11 @@ body {
 
 .cs-jc-end {
   justify-content: end !important;
+}
+
+.cs-ac-end {
+  align-content: flex-end !important;
+  align-items: flex-end !important
 }
 
 .flex {

@@ -1,9 +1,11 @@
 @import "/src/styles/colors";
+@import "/src/styles/functions";
 
-.group_heading{
-    color: $headingColor!important;
-    margin: 2rem 0rem 1rem 0rem!important;
+.group_heading {
+    color: $headingColor !important;
+    margin: 2rem 0rem 1rem 0rem !important;
 }
 
-
-
+.container {
+    margin-top: pxToRem(60);
+}
