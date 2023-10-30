@@ -24,13 +24,15 @@ const getCollapseLabel = ({
   secondaryLabel,
 }: IGetCollapseLabel) => {
   return (
-    <Row gutter={[10, 10]}>
-      <Col xs={12}>
+    <Row gutter={[20, 20]}>
+      <Col xs={11}>
         <Typography.Title level={4}>{header}</Typography.Title>
         <Typography.Text type="secondary">{label}</Typography.Text>
       </Col>
 
-      <Col xs={12}>
+      <Col xs={2}></Col>
+
+      <Col xs={11}>
         <Typography.Title level={4}>{secondaryHeader}</Typography.Title>
         <Typography.Text type="secondary">{secondaryLabel}</Typography.Text>
       </Col>
