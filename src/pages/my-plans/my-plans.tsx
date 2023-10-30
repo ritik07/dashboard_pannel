@@ -4,14 +4,18 @@ import PageHeader from "../../components/page-header/page-header";
 import { ProfileOutlined } from "@ant-design/icons";
 import { Col, Divider, Row } from "antd";
 import MyPlansViewer from "./component/plans-viewer/myPlansViewer";
-import MyPlansEditor from "./component/myPlansEditor";
-import PlanSider from "./component/planSider";
+import MyPlansEditor from "./component/plan-editor/myPlansEditor";
+import PlanSider from "./component/plan-sider/planSider";
 
 const MyPlans = () => {
   /**
    * @states
    */
   const [editMode, setEditMode] = useState(false);
+
+  const handleOnUpdate = () => {
+    setEditMode(true);
+  };
   return (
     <div className={CSS.container}>
       <PageHeader
@@ -23,10 +27,10 @@ const MyPlans = () => {
       <Divider className="cs-tm-20" />
 
       <Row gutter={[25, 25]}>
-        <Col xs={17}>{!editMode ? <MyPlansViewer /> : <MyPlansEditor />}</Col>
+        <Col xs={16}>{!editMode ? <MyPlansViewer /> : <MyPlansEditor />}</Col>
 
-        <Col xs={6}>
-          <PlanSider />
+        <Col xs={7}>
+          <PlanSider handleOnUpdate={handleOnUpdate} editMode={editMode} />
         </Col>
       </Row>
     </div>

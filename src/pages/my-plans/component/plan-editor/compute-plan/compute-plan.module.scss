@@ -1,0 +1,16 @@
+@import "/src/styles/functions";
+@import "/src/styles/colors";
+
+.plan_per_month_container {
+  background-color: $filledMonthCardColor;
+  padding: pxToRem(10) pxToRem(30);
+  border-radius: pxToRem(4);
+}
+
+.plan_time {
+  color: $plan;
+}
+
+.plan_price {
+  color: $white_clr  !important;
+}

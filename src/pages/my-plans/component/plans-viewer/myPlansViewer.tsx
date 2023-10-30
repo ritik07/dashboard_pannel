@@ -6,6 +6,7 @@ import MonthlyDetail from "./monthly-detail/monthly-detail";
 import CompanyDetail from "./company-detail/company-detail";
 import MangerDetail from "./manager-detail/manager-detail";
 import KycDetail from "./kyc-detail/kyc-detail";
+import DocumentDetail from "./document-detail/document-detail";
 
 const MyPlansViewer = () => {
   return (
@@ -24,6 +25,10 @@ const MyPlansViewer = () => {
         <Divider className="cs-tm-40" />
 
         <KycDetail />
+      </Card>
+
+      <Card className="cs-tm-40">
+        <DocumentDetail />
       </Card>
     </div>
   );

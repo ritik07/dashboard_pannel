@@ -52,7 +52,7 @@ const MonthlyDetail = () => {
         <div className="cs-tm-20" />
 
         <Row>
-          <Col xs={14}>
+          <Col xs={16}>
             <div className={CSS.plan_per_month_container}>
               <Typography.Text className={CSS.plan_time + " cs-fw-600"}>
                 3 Month Coach
@@ -73,7 +73,7 @@ const MonthlyDetail = () => {
                   </Typography.Title>
                   <div className="cs-dis-flex cs-ac-end cs-bm-6">
                     <Typography.Text className={CSS.plan_price + " cs-fw-600"}>
-                      / Month
+                      /<span className="cs-lm-2">Month</span>
                     </Typography.Text>
                   </div>
                 </div>

@@ -1,0 +1,17 @@
+@import "/src/styles/functions";
+@import "/src/styles/colors";
+
+.btn_container {
+    padding: pxToRem(15);
+    border-radius: pxToRem(4);
+    cursor: pointer;
+}
+
+.btn_update {
+    background-color: #4544c1;
+}
+
+.disabled {
+    background-color: #eae9ef !important;
+    cursor: auto;
+}

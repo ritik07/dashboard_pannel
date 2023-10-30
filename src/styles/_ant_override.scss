@@ -8,13 +8,23 @@
   border: none !important;
 }
 
-.ant-picker {
-  background-color: #f1f0f4 !important;
+.ant-input-group-addon {
+  background-color: #fff !important;
+  font-weight: 800 !important;
+  font-size: 22px !important;
 }
 
-.ant-input {
-  background-color: #f1f0f4 !important;
+.ant-input-group-addon {
+  color: #5dcb86 !important;
 }
+
+// .ant-picker {
+//   background-color: #f1f0f4 !important;
+// }
+
+// .ant-input {
+//   background-color: #f1f0f4 !important;
+// }
 
 // .anticon>.anticon-paper-clip {
 //   background: #5FFC99 !important;
@@ -62,7 +72,7 @@
   color: #fff !important;
 }
 
-.ant-layout-sider{
+.ant-layout-sider {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-}    
+}

@@ -1,7 +1,7 @@
 @use "sass:map";
 @import "/src/styles/functions";
 
-$padding-value: 2, 4, 6, 8, 10, 12, 14, 15, 16, 18, 20, 22, 24, 26;
+$padding-value: 2, 4, 6, 8, 10, 12, 14, 15, 16, 18, 20, 22, 24, 26, 40, 50;
 
 @each $value in $padding-value {
   .cs-bp-#{$value} {
@@ -16,10 +16,17 @@ $padding-value: 2, 4, 6, 8, 10, 12, 14, 15, 16, 18, 20, 22, 24, 26;
 }
 
 @each $value in $padding-value {
-    .cs-rp-#{$value} {
-      padding-right: #{$value}px !important;
-    }
+  .cs-rp-#{$value} {
+    padding-right: #{$value}px !important;
   }
+}
+
+
+@each $value in $padding-value {
+  .cs-lp-#{$value} {
+    padding-left: #{$value}px !important;
+  }
+}
 
 @each $value in $padding-value {
   .cs-p-#{$value} {
