@@ -1,8 +1,12 @@
 import React from "react";
 import type { CSSProperties } from "react";
 import type { CollapseProps } from "antd";
-import { Col, Collapse, Row, Typography } from "antd";
+import { Card, Col, Collapse, Row, Typography } from "antd";
 import ComputePlan from "./compute-plan/compute-plan";
+import Current from "./current/current";
+import Coach from "./coach/coach";
+import Kyc from "./kyc/kyc";
+import CSS from "./myPlansEditor.module.scss";
 
 const text = `
   A dog is a type of domesticated animal.
@@ -59,7 +63,7 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
     label: getCollapseLabel({
       header: "Current Badminton Coach",
     }),
-    children: <p>{text}</p>,
+    children: <Current />,
     style: panelStyle,
   },
   {
@@ -67,7 +71,7 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
     label: getCollapseLabel({
       header: "Badminton Coach",
     }),
-    children: <p>{text}</p>,
+    children: <Coach />,
     style: panelStyle,
   },
   {
@@ -75,7 +79,7 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
     label: getCollapseLabel({
       header: "KYC",
     }),
-    children: <p>{text}</p>,
+    children: <Kyc />,
     style: panelStyle,
   },
 ];
@@ -97,6 +101,13 @@ const MyPlansEditor = () => {
         accordion
         items={getItems(panelStyle)}
       />
+      <Card className={CSS.card}>
+        <div className="cs-dis-flex cs-center">
+          <div className={CSS.save}>Save & Edit</div>
+
+          <div className={CSS.cancel}>Cancel</div>
+        </div>
+      </Card>
     </div>
   );
 };
