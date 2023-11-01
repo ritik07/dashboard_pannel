@@ -14,7 +14,7 @@ const MangerDetail = () => {
       <Row>
         <Col xs={12}>
           <div>
-            <Typography.Title level={2}>Badminton Coach</Typography.Title>
+            <Typography.Title level={4}>Badminton Coach</Typography.Title>
           </div>
         </Col>
       </Row>
@@ -24,7 +24,7 @@ const MangerDetail = () => {
           <Space direction="vertical">
             <Typography.Text type="secondary">Coach Manager</Typography.Text>
             <Space direction="horizontal">
-              <Typography.Title level={3} className="cs-color-primary">
+              <Typography.Title level={5} className="cs-color-primary">
                 <UserOutlined />
               </Typography.Title>
               <Typography.Title level={5}>Rahul Mishra</Typography.Title>
@@ -38,7 +38,7 @@ const MangerDetail = () => {
               Second Coach Manager
             </Typography.Text>
             <Space direction="horizontal">
-              <Typography.Title level={3} className="cs-color-primary">
+              <Typography.Title level={5} className="cs-color-primary">
                 <UserOutlined />
               </Typography.Title>
               <Typography.Title level={5}>Pooja G</Typography.Title>
@@ -52,7 +52,7 @@ const MangerDetail = () => {
           <Space direction="vertical">
             <Typography.Text type="secondary">Manager Contact</Typography.Text>
             <Space direction="horizontal">
-              <Typography.Title level={3} className="cs-color-primary">
+              <Typography.Title level={5} className="cs-color-primary">
                 @
               </Typography.Title>
               <Typography.Title level={5}>Mishra@sports.com</Typography.Title>
@@ -64,7 +64,7 @@ const MangerDetail = () => {
           <Space direction="vertical">
             <Typography.Text type="secondary">Contact</Typography.Text>
             <Space direction="horizontal">
-              <Typography.Title level={3} className="cs-color-primary">
+              <Typography.Title level={5} className="cs-color-primary">
                 @
               </Typography.Title>
               <Typography.Title level={5}>poojag@sports.com</Typography.Title>
@@ -78,7 +78,7 @@ const MangerDetail = () => {
           <Space direction="vertical">
             <Typography.Text type="secondary">Manager Phone</Typography.Text>
             <Space direction="horizontal">
-              <Typography.Title level={3} className="cs-color-primary">
+              <Typography.Title level={5} className="cs-color-primary">
                 <PhoneFilled />
               </Typography.Title>
               <Typography.Title level={5}>+91-998837442</Typography.Title>
@@ -90,7 +90,7 @@ const MangerDetail = () => {
           <Space direction="vertical">
             <Typography.Text type="secondary">Contact</Typography.Text>
             <Space direction="horizontal">
-              <Typography.Title level={3} className="cs-color-primary">
+              <Typography.Title level={5} className="cs-color-primary">
                 <PhoneFilled />
               </Typography.Title>
               <Typography.Title type="secondary" level={5}>(optional)</Typography.Title>

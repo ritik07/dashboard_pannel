@@ -7,6 +7,7 @@ import Current from "./current/current";
 import Coach from "./coach/coach";
 import Kyc from "./kyc/kyc";
 import CSS from "./myPlansEditor.module.scss";
+import Uploader from "./uploader/uploader";
 
 const text = `
   A dog is a type of domesticated animal.
@@ -107,6 +108,17 @@ const MyPlansEditor = () => {
 
           <div className={CSS.cancel}>Cancel</div>
         </div>
+      </Card>
+
+      <Card className="cs-tm-20">
+        <Col xl={24} xs={24} className={CSS.cs_upload_wrapper}>
+          <div className="cs-bm-30">
+            <Typography.Title level={4}>
+              Badminton Coach Document
+            </Typography.Title>
+          </div>
+          <Uploader />
+        </Col>
       </Card>
     </div>
   );

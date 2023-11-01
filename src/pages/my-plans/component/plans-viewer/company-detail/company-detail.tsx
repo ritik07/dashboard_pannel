@@ -12,7 +12,7 @@ const CompanyDetail = () => {
       <Row>
         <Col xs={12}>
           <div>
-            <Typography.Title level={2}>
+            <Typography.Title level={4}>
               Current Badminton Coach
             </Typography.Title>
           </div>
@@ -26,11 +26,11 @@ const CompanyDetail = () => {
             <div>
               <Space direction="horizontal">
                 <div>
-                  <Typography.Title level={4} className="cs-color-primary">
+                  <Typography.Title level={5} className="cs-color-primary">
                     <LayoutOutlined />
                   </Typography.Title>
                 </div>
-                <Typography.Title level={4}>
+                <Typography.Title level={5}>
                   Karnataka Sports Academy
                 </Typography.Title>
               </Space>
@@ -57,7 +57,7 @@ const CompanyDetail = () => {
                       Joining Month
                     </Typography.Text>
                     <Space direction="horizontal">
-                      <Typography.Title level={3} className="cs-color-primary">
+                      <Typography.Title level={5} className="cs-color-primary">
                         <CalendarOutlined />
                       </Typography.Title>
                       <Typography.Title level={5}>24/08/2024</Typography.Title>
@@ -75,12 +75,12 @@ const CompanyDetail = () => {
             <div>
               <Row>
                 <Col xl={1}>
-                  <Typography.Title level={4} className="cs-color-primary">
+                  <Typography.Title level={5} className="cs-color-primary">
                     <PushpinOutlined />
                   </Typography.Title>
                 </Col>
                 <Col xl={16}>
-                  <Typography.Title level={4}>
+                  <Typography.Title level={5}>
                     123, abc street, 5th block HSR layout Bangalore - 56001,
                     Karnataka, India
                   </Typography.Title>

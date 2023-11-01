@@ -8,20 +8,22 @@ const MonthlyDetail = () => {
     <Row>
       <Col xs={12}>
         <div>
-          <Typography.Title level={2}>Current Coach Detais</Typography.Title>
+          <Typography.Title level={4}>Current Coach Detais</Typography.Title>
           <Typography.Text type="secondary">Badminton Coach</Typography.Text>
         </div>
 
         <div className="cs-tm-20" />
 
         <div>
-          <Typography.Text type="secondary">Your Current Coach</Typography.Text>
+          <Typography.Title level={5} type="secondary">
+            Your Current Coach
+          </Typography.Title>
           <div>
-            <Space direction="horizontal">
-              <Typography.Title className="cs-color-primary" level={2}>
+            <Space className="no-gap" direction="horizontal">
+              <Typography.Title className="cs-color-primary" level={5}>
                 ₹
               </Typography.Title>
-              <Typography.Title level={2}>80,000</Typography.Title>
+              <Typography.Title level={5}>80,000</Typography.Title>
             </Space>
           </div>
         </div>
@@ -33,11 +35,11 @@ const MonthlyDetail = () => {
           <div>
             <Space direction="horizontal">
               <div>
-                <Typography.Title level={3} className="cs-color-primary">
+                <Typography.Title level={5} className="cs-color-primary">
                   <CalendarOutlined />
                 </Typography.Title>
               </div>
-              <Typography.Title level={2}>3 Months</Typography.Title>
+              <Typography.Title level={5}>3 Months</Typography.Title>
             </Space>
           </div>
         </div>
@@ -45,7 +47,7 @@ const MonthlyDetail = () => {
 
       <Col xs={12}>
         <div>
-          <Typography.Title level={2}>Your Monthly Coach</Typography.Title>
+          <Typography.Title level={5}>Your Monthly Coach</Typography.Title>
           <Typography.Text type="secondary">Badminton Coach</Typography.Text>
         </div>
 
@@ -60,18 +62,21 @@ const MonthlyDetail = () => {
 
               <div>
                 <div className="cs-dis-flex">
-                  <div className="cs-tm-6">
+                  <div>
                     <Typography.Title
-                      level={4}
+                      level={5}
                       className={CSS.plan_price + " cs-fw-600"}
                     >
                       ₹
                     </Typography.Title>
                   </div>
-                  <Typography.Title className={CSS.plan_price + " cs-fw-600"}>
+                  <Typography.Title
+                    level={5}
+                    className={CSS.plan_price + " cs-fw-600"}
+                  >
                     15,800
                   </Typography.Title>
-                  <div className="cs-dis-flex cs-ac-end cs-bm-6">
+                  <div className="cs-dis-flex cs-ac-end cs-bm-4 cs-lm-4">
                     <Typography.Text className={CSS.plan_price + " cs-fw-600"}>
                       /<span className="cs-lm-2">Month</span>
                     </Typography.Text>
@@ -89,11 +94,11 @@ const MonthlyDetail = () => {
           <div>
             <Space direction="horizontal">
               <div>
-                <Typography.Title level={3} className="cs-color-primary">
+                <Typography.Title level={5} className="cs-color-primary">
                   <CalendarOutlined />
                 </Typography.Title>
               </div>
-              <Typography.Title level={2}>1 Year</Typography.Title>
+              <Typography.Title level={5}>1 Year</Typography.Title>
             </Space>
           </div>
         </div>

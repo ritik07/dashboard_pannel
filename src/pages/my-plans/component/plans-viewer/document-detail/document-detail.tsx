@@ -8,7 +8,7 @@ const DocumentDetail = () => {
       <Row>
         <Col xs={12}>
           <div>
-            <Typography.Title level={2}>
+            <Typography.Title level={4}>
               Badinton Coach Documents
             </Typography.Title>
           </div>
@@ -18,7 +18,7 @@ const DocumentDetail = () => {
       <Row className="cs-tm-40">
         <Col xs={7}>
           <Space direction="horizontal">
-            <Typography.Title level={3} className="cs-color-primary">
+            <Typography.Title level={5} className="cs-color-primary">
               <PaperClipOutlined />
             </Typography.Title>
             <Typography.Title level={5}>Document_12</Typography.Title>
@@ -27,7 +27,7 @@ const DocumentDetail = () => {
 
         <Col xs={7}>
           <Space direction="horizontal">
-            <Typography.Title level={3} className="cs-color-primary">
+            <Typography.Title level={5} className="cs-color-primary">
               <PaperClipOutlined />
             </Typography.Title>
             <Typography.Title level={5}>Document_12</Typography.Title>
@@ -36,7 +36,7 @@ const DocumentDetail = () => {
         
         <Col xs={7}>
           <Space direction="horizontal">
-            <Typography.Title level={3} className="cs-color-primary">
+            <Typography.Title level={5} className="cs-color-primary">
               <PaperClipOutlined />
             </Typography.Title>
             <Typography.Title level={5}>Document_12</Typography.Title>
