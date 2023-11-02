@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Tag } from "antd";
+import { Typography, Tag, Row, Col } from "antd";
 import SummaryItem from "./summary-item";
 
 const SummaryDetails = () => {
@@ -56,9 +56,17 @@ const SummaryDetails = () => {
         </Typography.Title>
 
         <div className="cs-tm-10">
-          <Tag className="cs-tm-10">Injury Helpline</Tag>
-          <Tag className="cs-tm-10">Personal Phone Calls</Tag>
-          <Tag className="cs-tm-10">Fraud</Tag>
+          <Row>
+            <Col xs={24}>
+              <Tag className="cs-tm-10">Injury Helpline</Tag>
+            </Col>
+            <Col xs={24}>
+              <Tag className="cs-tm-10">Personal Phone Calls</Tag>
+            </Col>
+            <Col xs={24}>
+              <Tag className="cs-tm-10">Fraud</Tag>
+            </Col>
+          </Row>
         </div>
       </div>
     </div>
