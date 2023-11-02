@@ -17,7 +17,7 @@
 }
 
 .verified {
-  color: #7979ff;
+  color: #7979ff !important;
 }
 
 .coaching_icon {
@@ -33,10 +33,19 @@
   border-radius: 20px;
 }
 
-.active_icon{
+.active_icon {
   font-size: 26px;
 }
 
-.cs_divider{
+.cs_divider {
   border-right: solid 1px #8888;
+}
+
+.table_header {
+  background-color: #f8f9fb;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #00000024;
 }
