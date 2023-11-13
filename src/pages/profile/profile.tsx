@@ -11,6 +11,7 @@ import { Card, Col, Divider, Row, Space, Typography } from "antd";
 import { HistoryOutlined } from "@ant-design/icons";
 import UserDetail from "./user-detail/user-detail";
 import CoCoachingHistory from "./co-coaching-history/co-coaching-history";
+import CoachingHistory from "./coaching-history/coaching-history";
 
 const Profile = () => {
   return (
@@ -38,6 +39,21 @@ const Profile = () => {
 
       <div className="cs-tm-40">
         <CoCoachingHistory />
+      </div>
+
+      <div className="cs-tm-40">
+        <Space direction="horizontal">
+          <HistoryOutlined className={CSS.verified} />
+
+          <Typography.Title level={5} className={CSS.verified}>
+            Coaching History
+          </Typography.Title>
+        </Space>
+        <CoachingHistory />
+      </div>
+
+      <div className="cs-tm-40">
+        <CoachingHistory />
       </div>
     </div>
   );

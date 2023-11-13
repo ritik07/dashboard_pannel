@@ -1,0 +1,19 @@
+@import "/src/styles/functions";
+@import "/src/styles/colors";
+
+.container {
+  background-color: #00ad40;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.icon {
+  background-color: #fff;
+  border-radius: 50%;
+  color: #00ad40;
+  padding: 12px;
+}
+
+.title{
+  color: #19dc5f !important;
+}
