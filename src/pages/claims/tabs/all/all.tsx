@@ -1,0 +1,24 @@
+import React from "react";
+import Header from "../common/header";
+import CSS from "./all.module.scss";
+import { Card, Col, Row, Typography } from "antd";
+import RowContainer from "../common/row-container";
+
+interface IAll {
+  filterBy: any;
+  data: any[];
+}
+
+const All = ({ filterBy, data }: IAll) => {
+  return (
+    <div>
+      <div className={CSS.header_container}>
+        <Header />
+      </div>
+
+      <RowContainer filterBy={filterBy} data={data} />
+    </div>
+  );
+};
+
+export default All;

@@ -1,0 +1,39 @@
+@import "/src/styles/colors";
+@import "/src/styles/functions";
+
+.group_heading {
+  color: $headingColor  !important;
+  margin: 2rem 0rem 1rem 0rem !important;
+}
+
+.container {
+  margin-top: pxToRem(60);
+}
+
+.btn_prmry {
+  border-color: #8383f5;
+  color: #8383f5;
+}
+
+.clr_email {
+  color: #8383f5 !important;
+}
+
+.btn_disabled {
+  padding: 2px 20px;
+  border: 1px solid #8888886d;
+  border-radius: 20px;
+  color: #8888886d;
+}
+
+.deactivate {
+  color: #bd3a36 !important;
+}
+
+.deactive_btn {
+  background-color: #bd3a36 !important;
+  border-radius: 20px;
+  padding: 4px 20px;
+  color: #fff;
+  cursor: pointer;
+}

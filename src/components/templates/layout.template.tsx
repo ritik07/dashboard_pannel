@@ -5,6 +5,7 @@ import {
   FileTextOutlined,
   FileOutlined,
   ExclamationCircleOutlined,
+  TeamOutlined,
   SettingOutlined,
   UserOutlined,
   LeftOutlined,
@@ -37,6 +38,7 @@ function getItem(
 const items: MenuItem[] = [
   getItem("My Plans", "/", <FileTextOutlined />),
   getItem("Claims", "/claims", <FileOutlined />),
+  getItem("Team Coach", "/team-coach", <TeamOutlined />),
   getItem("FAQ", "/faq", <ExclamationCircleOutlined />),
   getItem("Settings", "/settings", <SettingOutlined />),
   getItem("Profile", "/profile", <UserOutlined />),

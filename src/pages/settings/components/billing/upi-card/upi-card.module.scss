@@ -1,0 +1,62 @@
+.card_container {
+  background-color: #f6f8fa;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.add_card_coontent {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card_coontent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_coontent_view {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.add_icon {
+  color: #00ad40 !important;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.remove_icon_container {
+  background-color: #ad0a03;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.remove_txt {
+  color: #ad0a03;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.remove_icon {
+  color: #FFF !important;
+}
+
+.add_upi_coontent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bank_name {
+  color: #000;
+  font-weight: 600;
+}

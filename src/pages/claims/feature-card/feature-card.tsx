@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Space, Typography } from "antd";
+import { Col, Divider, Row, Space, Typography } from "antd";
 import { ApiFilled } from "@ant-design/icons";
 import CSS from "./feature-card.module.scss";
 
@@ -8,25 +8,33 @@ const FeatureCard = () => {
     <div className={CSS.container}>
       <Row>
         <Col xs={24}>
-          <Space direction="horizontal">
+          <div className="cs-dis-flex cs-hrz-center">
             <ApiFilled className={CSS.icon} />
+          </div>
+          <div className="cs-dis-flex cs-hrz-center cs-tm-10">
             <Typography.Title level={4} className="cs-clr-fff">
-              Fusce tempor
-            </Typography.Title>
-          </Space>
-
-          <div className="cs-tm-30">
-            <Typography.Title className={CSS.title} level={5}>
-              Sapien
+              Badminton Coach
             </Typography.Title>
           </div>
-          <div className="cs-dis-flex cs-jc-sb">
-            <Typography.Title className="cs-clr-fff" level={3}>
-              Metus
-            </Typography.Title>
 
-            <Typography.Title className="cs-clr-fff" level={4}>
-              Libero
+          <div className="cs-dis-flex cs-hrz-center cs-tm-10">
+            <Typography.Text style={{ textAlign: "center", color: "#fff" }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+              officia, vel quos optio cupiditate autem, fugit, tempore obcaecati
+              doloremque dolorem provident odit velit iure in ullam ratione.
+              Perferendis, quos vel!
+            </Typography.Text>
+          </div>
+
+          <Divider style={{ backgroundColor: "#fff" }} />
+
+          <div className="cs-dis-flex cs-hrz-center cs-tm-10">
+            <Typography.Title
+              level={4}
+              className="cs-clr-fff"
+              style={{ cursor: "pointer" }}
+            >
+              Book a Coach
             </Typography.Title>
           </div>
         </Col>

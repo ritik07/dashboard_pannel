@@ -1,0 +1,50 @@
+.card_container {
+  background-color: #f6f8fa;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.add_card_coontent {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card_coontent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_text {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.add_icon {
+  color: #00ad40 !important;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.remove_icon_container {
+  background-color: #ad0a03;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.remove_icon {
+  color: #FFF !important;
+}
+
+.bank_name {
+  color: #5c5af1;
+}

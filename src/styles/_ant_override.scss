@@ -76,3 +76,50 @@
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+.ant-steps-item-icon {
+  background-color: #5555f1 !important;
+  color: #fff !important;
+}
+
+.ant-steps-icon {
+  color: #fff !important;
+}
+
+.ant-steps .ant-steps-item-finish>.ant-steps-item-container>.ant-steps-item-tail::after {
+  border: 3px solid #aaaaf8 !important;
+}
+
+.ant-steps-item-title {
+  font-size: 12px !important;
+  font-weight: 500;
+}
+
+.ant-pagination-item-active {
+  background-color: #5555f1 !important;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: #fff !important;
+}
+
+.custom-collapse .ant-collapse-header {
+  background-color: #fff !important;
+  margin-top: 16px;
+}
+
+.custom-collapse .ant-collapse-content {
+  background-color: #fff !important;
+}
+
+.custom-team-card-border-none {
+  border: none !important;
+}
+
+.custom-team-card-border-none .ant-card-body {
+  padding: 10px !important;
+}
+
+.custom-collapse .ant-collapse-content-box{
+  padding-block: 0px 0px 0px 12px !important;
+}

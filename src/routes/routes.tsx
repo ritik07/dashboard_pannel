@@ -6,6 +6,7 @@ import Faq from "../pages/Faq/faq";
 import Settings from "../pages/settings/settings";
 import Profile from "../pages/profile/profile";
 import Support from "../pages/support/support";
+import TeamCoach from "../pages/team-coach/team-coach";
 
 const Router = () => {
   return (
@@ -13,6 +14,7 @@ const Router = () => {
       <Route path="/" element={<LayoutContainer />}>
         <Route index element={<MyPlans />} />
         <Route path="/claims" element={<Claims />} />
+        <Route path="/team-coach" element={<TeamCoach />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/profile" element={<Profile />} />
