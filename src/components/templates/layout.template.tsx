@@ -38,6 +38,7 @@ function getItem(
 const items: MenuItem[] = [
   getItem("My Plans", "/", <FileTextOutlined />),
   getItem("Claims", "/claims", <FileOutlined />),
+  getItem("Team Plans", "/team-plans", <TeamOutlined />),
   getItem("Team Coach", "/team-coach", <TeamOutlined />),
   getItem("FAQ", "/faq", <ExclamationCircleOutlined />),
   getItem("Settings", "/settings", <SettingOutlined />),

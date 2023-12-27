@@ -1,0 +1,17 @@
+@import "/src/styles/functions";
+@import "/src/styles/colors";
+
+.container {
+  margin-top: pxToRem(60);
+}
+
+.verified {
+  color: #7979ff !important;
+}
+
+.active_coach_grid {
+  display: grid;
+  grid-template-columns: 72% 28%;
+  gap: 30px;
+  cursor: pointer;
+}

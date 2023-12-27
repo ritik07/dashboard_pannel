@@ -1,0 +1,26 @@
+@import "/src/styles/functions";
+@import "/src/styles/colors";
+
+.upgrade_plan_container {
+  background-color: #eaeffe;
+  padding: pxToRem(20);
+  border-radius: pxToRem(4);
+}
+
+.tag_text_color {
+  color: #7878f3;
+  font-weight: 600;
+}
+
+.info_icon {
+  background-color: #7878f37e;
+  padding: pxToRem(8);
+  border-radius: 50%;
+  font-size: larger;
+}
+
+.upgrade_btn {
+  padding: pxToRem(6);
+  border-radius: pxToRem(4);
+  background-color: #5555f1;
+}

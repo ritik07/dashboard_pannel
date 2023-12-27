@@ -1,0 +1,50 @@
+.subscription {
+  margin-top: 12px;
+  background-color: #201540;
+  padding: 24px 24px;
+  border-radius: 6px;
+}
+
+.sub_title {
+  color: #aba8b8 !important;
+}
+
+.total {
+  color: #fff !important;
+  text-align: right;
+}
+
+.sub_value {
+  color: #fff !important;
+}
+
+.total_value {
+  color: #fff !important;
+  text-align: right;
+}
+
+.button_Container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.decline {
+  padding: 5px 40px;
+  background-color: #eae9ef;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.approve {
+  padding: 5px 80px;
+  background-color: #00ad40;
+  border-radius: 20px;
+  margin-left: 18px;
+  cursor: pointer;
+}
+
+.txt_approve {
+  color: #fff !important;
+}
