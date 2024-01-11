@@ -19,6 +19,7 @@ const DurationCard = ({ data, active, onSelect }: IDurationCard) => {
           <Row className="cs-bm-20">
             <Col
               xs={24}
+              xl={24}
               className={`${
                 index === 0
                   ? CSS.cs_active_bank_card_container
@@ -26,11 +27,15 @@ const DurationCard = ({ data, active, onSelect }: IDurationCard) => {
               } cs-cursor-pointer`}
             >
               <Row gutter={[10, 10]}>
-                <Col xs={6} className="cs-dis-flex cs-center cs-w-100">
+                <Col xs={24} xl={6} className="cs-dis-flex cs-center cs-w-100">
                   <Title level={5}>{item.duration}</Title>
                 </Col>
 
-                <Col xs={7} className="cs-dis-flex cs-center cs-w-100 cs-jc-sb">
+                <Col
+                  xs={24}
+                  xl={7}
+                  className="cs-dis-flex cs-center cs-w-100 cs-jc-sb"
+                >
                   <div className="cs-lm-10">
                     <Title
                       type="secondary"
@@ -45,13 +50,13 @@ const DurationCard = ({ data, active, onSelect }: IDurationCard) => {
                   </div>
                 </Col>
 
-                <Col xs={7} className="cs-dis-flex cs-center">
+                <Col xs={24} xl={7} className="cs-dis-flex cs-center">
                   <div className="cs-dis-flex cs-center">
                     <Title level={4}>₹ 1,368</Title>
                   </div>
                 </Col>
 
-                <Col xs={4} className="cs-dis-flex cs-center">
+                <Col xs={24} xl={4} className="cs-dis-flex cs-center">
                   <div
                     className={
                       `${

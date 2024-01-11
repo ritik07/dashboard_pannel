@@ -19,7 +19,7 @@ const ComputePlan = () => {
   return (
     <div className="cs-lm-20">
       <Row gutter={[20, 20]}>
-        <Col xs={11}>
+        <Col xs={24} xl={11}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary">
               Your Current Coach
@@ -36,11 +36,11 @@ const ComputePlan = () => {
           </div>
         </Col>
 
-        <Col xs={2}></Col>
+        <Col xs={24} xl={2}></Col>
 
-        <Col xs={11}>
+        <Col xs={24} xl={11}>
           <Row>
-            <Col xs={20}>
+            <Col xs={24} xl={20}>
               <div className={CSS.plan_per_month_container}>
                 <div className="cs-dis-flex">
                   <div className="cs-tm-6">
@@ -65,7 +65,7 @@ const ComputePlan = () => {
           </Row>
         </Col>
 
-        <Col xs={11}>
+        <Col xs={24} xl={11}>
           <div className="cs-bm-4">
             <Typography.Text>Coach Duration</Typography.Text>
           </div>
@@ -75,9 +75,9 @@ const ComputePlan = () => {
           />
         </Col>
 
-        <Col xs={2}></Col>
+        <Col xs={24} xl={2}></Col>
 
-        <Col xs={10}>
+        <Col xs={24} xl={10}>
           <div className="cs-bm-4">
             <Typography.Text>Badinton Duration</Typography.Text>
           </div>

@@ -78,7 +78,11 @@
 }
 
 .ant-steps-item-icon {
+  display: flex !important;
+  justify-content: center !important;
   background-color: #5555f1 !important;
+  width: 40px !important;
+  height: auto !important;
   color: #fff !important;
 }
 
@@ -106,6 +110,19 @@
 .custom-collapse .ant-collapse-header {
   background-color: #fff !important;
   margin-top: 16px;
+}
+
+.ant-collapse>.ant-collapse-item >.ant-collapse-header{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  padding: 2px 6px !important;
+  padding-inline-start: 12px;
+  color: rgba(0, 0, 0, 0.88);
+  line-height: 1.5714285714285714;
+  cursor: pointer;
+  transition: all 0.3s,visibility 0s;
 }
 
 .custom-collapse .ant-collapse-content {

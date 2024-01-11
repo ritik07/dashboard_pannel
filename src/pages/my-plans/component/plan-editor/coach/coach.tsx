@@ -12,7 +12,7 @@ const Coach = () => {
   return (
     <div className="cs-lm-20">
       <Row gutter={[20, 20]}>
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary">Coach Manager</Typography.Text>
           </div>
@@ -23,7 +23,7 @@ const Coach = () => {
           />
         </Col>
 
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary">
               {" "}
@@ -37,7 +37,7 @@ const Coach = () => {
           />
         </Col>
 
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary"> Manager Contact</Typography.Text>
           </div>
@@ -48,7 +48,7 @@ const Coach = () => {
           />
         </Col>
 
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary"> Manager Contact</Typography.Text>
           </div>
@@ -59,7 +59,7 @@ const Coach = () => {
           />
         </Col>
 
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary"> Manager Phone</Typography.Text>
           </div>
@@ -71,7 +71,7 @@ const Coach = () => {
           />
         </Col>
 
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary"> Manager Phone</Typography.Text>
           </div>

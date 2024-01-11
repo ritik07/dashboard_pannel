@@ -10,7 +10,7 @@ const Current = () => {
   return (
     <div className="cs-lm-20">
       <Row gutter={[20, 20]}>
-        <Col xs={11}>
+        <Col xs={24} xl={11}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary">Company Name</Typography.Text>
           </div>
@@ -20,7 +20,7 @@ const Current = () => {
             defaultValue={"Karnataka sports academy"}
           />
           <Row gutter={[20, 20]} className="cs-tm-20">
-            <Col xs={12}>
+            <Col xs={24} xl={12}>
               <div className="cs-bm-4">
                 <Typography.Text type="secondary">
                   Employment Type
@@ -33,7 +33,7 @@ const Current = () => {
               />
             </Col>
 
-            <Col xs={12}>
+            <Col xs={24} xl={12}>
               <div className="cs-bm-4">
                 <Typography.Text type="secondary">
                   Joining Month
@@ -44,9 +44,9 @@ const Current = () => {
           </Row>
         </Col>
 
-        <Col xs={2}></Col>
+        <Col xs={24} xl={2}></Col>
 
-        <Col xs={11}>
+        <Col xs={24} xl={11}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary">Address</Typography.Text>
           </div>

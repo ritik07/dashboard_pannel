@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import CSS from "./claims.module.scss";
 import PageHeader from "../../components/page-header/page-header";
-import { ProfileOutlined, HistoryOutlined } from "@ant-design/icons";
+import {
+  ProfileOutlined,
+  HistoryOutlined,
+  FileOutlined,
+} from "@ant-design/icons";
 import { Col, Divider, Row, Space, Typography, Tabs, Pagination } from "antd";
 import FeatureCard from "./feature-card/feature-card";
 import type { TabsProps } from "antd";
@@ -11,7 +15,7 @@ import Approved from "./tabs/approved/approved";
 const Claims = () => {
   const [filterBy, setFilterBy] = useState<number>(1);
   const data: any = [{}, {}];
-  
+
   const items: TabsProps["items"] = [
     {
       key: "1",
@@ -35,11 +39,7 @@ const Claims = () => {
   };
   return (
     <div className={CSS.container}>
-      <PageHeader
-        Icon={ProfileOutlined}
-        Title="My Claims"
-        Description="lorem"
-      />
+      <PageHeader Icon={FileOutlined} Title="My Claims" Description="lorem" />
 
       <Divider className="cs-tm-20 cs-bm-30" />
 

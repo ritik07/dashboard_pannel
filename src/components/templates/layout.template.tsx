@@ -14,6 +14,7 @@ import {
 } from "@ant-design/icons";
 import CSS from "./layout.template.module.scss";
 import { Outlet, useNavigate } from "react-router-dom";
+import isMobileView from "./mobile";
 
 const { Header, Content, Sider } = Layout;
 
@@ -48,7 +49,8 @@ const items: MenuItem[] = [
 
 const LayoutContainer: React.FC = () => {
   const navigate = useNavigate();
-  const [collapsed, setCollapsed] = useState(false);
+  const mobileView = isMobileView();
+  const [collapsed, setCollapsed] = useState(!mobileView ? false : true);
   const [currentActive, setCurrentActive] = useState("");
 
   useEffect(() => {
@@ -97,9 +99,11 @@ const LayoutContainer: React.FC = () => {
               `${CSS.layout_collapse_btn_container}` + " cs-dis-flex cs-clr-fff"
             }
           >
-            <div className="cs-dis-flex cs-center cs-rm-5 cs-pointer">
-              {!collapsed ? <LeftOutlined /> : <RightOutlined />}
-            </div>
+            {!mobileView ? (
+              <div className="cs-dis-flex cs-center cs-rm-5 cs-pointer">
+                {!collapsed ? <LeftOutlined /> : <RightOutlined />}
+              </div>
+            ) : null}
             {!collapsed && (
               <Typography.Text
                 type="secondary"

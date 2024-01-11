@@ -13,7 +13,7 @@ const Sider = () => {
   return (
     <div>
       <Row>
-        <Col xs={18}>
+        <Col xs={24} xl={18}>
           <SiderCard />
         </Col>
       </Row>

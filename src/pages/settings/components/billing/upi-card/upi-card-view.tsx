@@ -13,9 +13,7 @@ const UPICardView = () => {
           </Typography.Text>
         </Space>
         <div className="cs-dis-flex cs-vt-center">
-          <div className={CSS.remove_txt}>
-           Remove
-          </div>
+          <div className={CSS.remove_txt}>Remove</div>
         </div>
       </div>
     </div>

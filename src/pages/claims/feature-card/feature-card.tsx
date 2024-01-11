@@ -31,7 +31,7 @@ const FeatureCard = () => {
           <div className="cs-dis-flex cs-hrz-center cs-tm-10">
             <Typography.Title
               level={4}
-              className="cs-clr-fff"
+              className={CSS.book_coach}
               style={{ cursor: "pointer" }}
             >
               Book a Coach

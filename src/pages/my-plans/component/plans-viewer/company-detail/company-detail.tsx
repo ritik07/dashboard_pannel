@@ -10,7 +10,7 @@ const CompanyDetail = () => {
   return (
     <div>
       <Row>
-        <Col xs={12}>
+        <Col xs={24} sm={24} xl={12}>
           <div>
             <Typography.Title level={4}>
               Current Badminton Coach
@@ -20,7 +20,7 @@ const CompanyDetail = () => {
       </Row>
 
       <Row className="cs-tm-40">
-        <Col xl={12}>
+        <Col xl={12} xs={24}>
           <div>
             <Typography.Text type="secondary">Company Name</Typography.Text>
             <div>
@@ -37,9 +37,9 @@ const CompanyDetail = () => {
             </div>
           </div>
 
-          <Col xs={12} className="cs-tm-40">
+          <Col xs={24} xl={12} className="cs-tm-40">
             <Row gutter={[20, 20]}>
-              <Col xs={12}>
+              <Col xs={24} xl={18}>
                 <div>
                   <Space direction="vertical">
                     <Typography.Text type="secondary">
@@ -50,7 +50,7 @@ const CompanyDetail = () => {
                 </div>
               </Col>
 
-              <Col xs={12}>
+              <Col xs={24} xl={6}>
                 <div>
                   <Space direction="vertical">
                     <Typography.Text type="secondary">
@@ -69,17 +69,17 @@ const CompanyDetail = () => {
           </Col>
         </Col>
 
-        <Col xl={12}>
+        <Col xl={12} xs={24}>
           <div>
             <Typography.Text type="secondary">Address</Typography.Text>
             <div>
-              <Row>
-                <Col xl={1}>
+              <Row gutter={[20, 20]}>
+                <Col xs={1}>
                   <Typography.Title level={5} className="cs-color-primary">
                     <PushpinOutlined />
                   </Typography.Title>
                 </Col>
-                <Col xl={16}>
+                <Col xs={16}>
                   <Typography.Title level={5}>
                     123, abc street, 5th block HSR layout Bangalore - 56001,
                     Karnataka, India

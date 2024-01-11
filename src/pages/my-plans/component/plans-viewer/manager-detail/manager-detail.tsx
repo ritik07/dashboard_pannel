@@ -12,7 +12,7 @@ const MangerDetail = () => {
   return (
     <div>
       <Row>
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div>
             <Typography.Title level={4}>Badminton Coach</Typography.Title>
           </div>
@@ -20,7 +20,7 @@ const MangerDetail = () => {
       </Row>
 
       <Row className="cs-tm-40">
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Coach Manager</Typography.Text>
             <Space direction="horizontal">
@@ -32,7 +32,7 @@ const MangerDetail = () => {
           </Space>
         </Col>
 
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <Space direction="vertical">
             <Typography.Text type="secondary">
               Second Coach Manager
@@ -48,7 +48,7 @@ const MangerDetail = () => {
       </Row>
 
       <Row className="cs-tm-20">
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Manager Contact</Typography.Text>
             <Space direction="horizontal">
@@ -60,7 +60,7 @@ const MangerDetail = () => {
           </Space>
         </Col>
 
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Contact</Typography.Text>
             <Space direction="horizontal">
@@ -74,7 +74,7 @@ const MangerDetail = () => {
       </Row>
 
       <Row className="cs-tm-20">
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Manager Phone</Typography.Text>
             <Space direction="horizontal">
@@ -86,14 +86,16 @@ const MangerDetail = () => {
           </Space>
         </Col>
 
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Contact</Typography.Text>
             <Space direction="horizontal">
               <Typography.Title level={5} className="cs-color-primary">
                 <PhoneFilled />
               </Typography.Title>
-              <Typography.Title type="secondary" level={5}>(optional)</Typography.Title>
+              <Typography.Title type="secondary" level={5}>
+                (optional)
+              </Typography.Title>
             </Space>
           </Space>
         </Col>

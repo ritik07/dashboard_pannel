@@ -6,7 +6,7 @@ const Kyc = () => {
   return (
     <div className="cs-lm-20">
       <Row gutter={[20, 20]}>
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary">PAN Card</Typography.Text>
           </div>
@@ -18,7 +18,7 @@ const Kyc = () => {
           />
         </Col>
 
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div className="cs-bm-4">
             <Typography.Text type="secondary">Aadhar Card</Typography.Text>
           </div>

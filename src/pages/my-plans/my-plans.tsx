@@ -27,9 +27,11 @@ const MyPlans = () => {
       <Divider className="cs-tm-20" />
 
       <Row gutter={[25, 25]}>
-        <Col xs={16}>{!editMode ? <MyPlansViewer /> : <MyPlansEditor />}</Col>
+        <Col xs={24} xl={16}>
+          {!editMode ? <MyPlansViewer /> : <MyPlansEditor />}
+        </Col>
 
-        <Col xs={7}>
+        <Col xs={24} xl={7}>
           <PlanSider handleOnUpdate={handleOnUpdate} editMode={editMode} />
         </Col>
       </Row>

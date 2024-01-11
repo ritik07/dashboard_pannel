@@ -17,9 +17,9 @@ const NormalFeedbackCard: React.FC<Props> = (props: Props) => {
             className={CSS.container}
             bodyStyle={{ display: "flex", padding: "1.5rem" }}
         >
-            <CircularCardIcon icon={FolderOutlined} size={3} padding={1} backgroundColor={'#3374D2'} color="#fff" />
+            <CircularCardIcon icon={FolderOutlined} size={2} padding={1} backgroundColor={'#3374D2'} color="#fff" />
             <div className={CSS.data_container}>
-                <Typography.Title level={5} className={CSS.title_text} >
+                <Typography.Title type="secondary" level={4} className={CSS.title_text} >
                     {props.title}
                 </Typography.Title>
                 <Typography.Text>

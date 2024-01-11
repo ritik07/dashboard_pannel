@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Row, Typography, Collapse, Space, Steps, Card } from "antd";
 import CSS from "./row-container.module.scss";
-import { ApiFilled } from "@ant-design/icons";
+import { ApiFilled, CheckOutlined, InfoOutlined } from "@ant-design/icons";
 
 interface IRowContainer {
   filterBy: any;
@@ -11,15 +11,19 @@ interface IRowContainer {
 const items = [
   {
     title: <div>Coach Assessment</div>,
+    icon: <CheckOutlined />,
   },
   {
     title: "Investigation in Progress",
+    icon: <InfoOutlined />,
   },
   {
     title: "Coach Status",
+    icon: <InfoOutlined />,
   },
   {
     title: "Assignement close",
+    icon: <InfoOutlined />,
   },
 ];
 
@@ -61,7 +65,12 @@ const RowContainer = ({ filterBy, data }: IRowContainer) => {
           </div>
           <Row className="cs-tm-30">
             <Col xs={24}>
-              <Steps current={1} labelPlacement="vertical" items={items} />
+              <Steps
+                iconPrefix=""
+                current={1}
+                labelPlacement="vertical"
+                items={items}
+              />
             </Col>
           </Row>
 

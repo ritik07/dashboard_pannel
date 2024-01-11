@@ -14,8 +14,8 @@ const CoachDetail2 = ({ header, data, editMode }: ICoachDetail) => {
     <div className="cs-tm-30">
       <Typography.Title level={4}>{header}</Typography.Title>
 
-      <Row className="cs-tm-20">
-        <Col xs={24}>
+      <Row gutter={[20, 20]} className="cs-tm-20">
+        <Col xl={24} xs={24}>
           <Space direction="vertical">
             <Typography.Text type="secondary">
               {data.company_name.value}
@@ -36,8 +36,8 @@ const CoachDetail2 = ({ header, data, editMode }: ICoachDetail) => {
         </Col>
       </Row>
 
-      <Row className="cs-tm-20">
-        <Col xs={6}>
+      <Row gutter={[20, 20]} className="cs-tm-20">
+        <Col xs={24} xl={6}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Employment Type</Typography.Text>
             {!editMode ? (
@@ -46,7 +46,7 @@ const CoachDetail2 = ({ header, data, editMode }: ICoachDetail) => {
               <Select
                 value={data.employment_type.value}
                 size="large"
-                style={{ width: "200%" }}
+                style={{ width: "150%" }}
                 disabled={!data.employment_type.is_editable}
                 options={[{ value: "full-time", label: "full-time" }]}
               />
@@ -54,7 +54,7 @@ const CoachDetail2 = ({ header, data, editMode }: ICoachDetail) => {
           </Space>
         </Col>
 
-        <Col xs={6}>
+        <Col xs={24} xl={6}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Joining Month</Typography.Text>
             {!editMode ? (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Divider, Typography } from "antd";
+import { Col, Divider, Input, Row, Typography } from "antd";
 import CoachDetail from "./coach-detail";
 import CoachDetail2 from "./coach-detail2";
 import CoachContact from "./coach-contact";
@@ -38,17 +38,25 @@ const Detail = ({ data }: IData) => {
         voluptatum natus maiores, libero veritatis beatae quibusdam, commodi
         quia praesentium. Nesciunt, voluptatibus!
       </Typography.Title>
+
+      <Input.TextArea className="cs-tm-30" placeholder="Remark" />
+
       {editMode ? (
         <div className={CSS.button_Container}>
-          <div className={CSS.decline} onClick={() => setEditMode(false)}>
-            <Typography.Title level={5}>Cancel</Typography.Title>
-          </div>
-
-          <div className={CSS.approve}>
-            <Typography.Title level={5} className={CSS.txt_approve}>
-              Save & Edit
-            </Typography.Title>
-          </div>
+          <Row gutter={[20, 20]}>
+            <Col>
+              <div className={CSS.decline} onClick={() => setEditMode(false)}>
+                <Typography.Title level={5}>Cancel</Typography.Title>
+              </div>
+            </Col>
+            <Col>
+              <div className={CSS.approve}>
+                <Typography.Title level={5} className={CSS.txt_approve}>
+                  Save & Edit
+                </Typography.Title>
+              </div>
+            </Col>
+          </Row>
         </div>
       ) : null}
     </div>

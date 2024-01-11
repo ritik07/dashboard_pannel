@@ -6,7 +6,7 @@ const KycDetail = () => {
   return (
     <div>
       <Row>
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div>
             <Typography.Title level={4}>KYC</Typography.Title>
           </div>
@@ -14,7 +14,7 @@ const KycDetail = () => {
       </Row>
 
       <Row className="cs-tm-40">
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <Space direction="vertical">
             <Typography.Text type="secondary">PAN Number</Typography.Text>
             <Space direction="horizontal">
@@ -26,7 +26,7 @@ const KycDetail = () => {
           </Space>
         </Col>
 
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Aadhar Number</Typography.Text>
             <Space direction="horizontal">

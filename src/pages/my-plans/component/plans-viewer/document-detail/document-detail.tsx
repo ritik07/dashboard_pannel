@@ -6,7 +6,7 @@ const DocumentDetail = () => {
   return (
     <div>
       <Row>
-        <Col xs={12}>
+        <Col xs={24} xl={12}>
           <div>
             <Typography.Title level={4}>
               Badinton Coach Documents
@@ -16,7 +16,7 @@ const DocumentDetail = () => {
       </Row>
 
       <Row className="cs-tm-40">
-        <Col xs={7}>
+        <Col xs={24} xl={7}>
           <Space direction="horizontal">
             <Typography.Title level={5} className="cs-color-primary">
               <PaperClipOutlined />
@@ -25,16 +25,7 @@ const DocumentDetail = () => {
           </Space>
         </Col>
 
-        <Col xs={7}>
-          <Space direction="horizontal">
-            <Typography.Title level={5} className="cs-color-primary">
-              <PaperClipOutlined />
-            </Typography.Title>
-            <Typography.Title level={5}>Document_12</Typography.Title>
-          </Space>
-        </Col>
-        
-        <Col xs={7}>
+        <Col xs={24} xl={7}>
           <Space direction="horizontal">
             <Typography.Title level={5} className="cs-color-primary">
               <PaperClipOutlined />
@@ -43,6 +34,14 @@ const DocumentDetail = () => {
           </Space>
         </Col>
 
+        <Col xs={24} xl={7}>
+          <Space direction="horizontal">
+            <Typography.Title level={5} className="cs-color-primary">
+              <PaperClipOutlined />
+            </Typography.Title>
+            <Typography.Title level={5}>Document_12</Typography.Title>
+          </Space>
+        </Col>
       </Row>
     </div>
   );

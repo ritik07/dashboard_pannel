@@ -6,6 +6,7 @@ import {
   UserOutlined,
   PhoneFilled,
   IdcardFilled,
+  CloseOutlined
 } from "@ant-design/icons";
 import moment from "moment";
 import dayjs from "dayjs";
@@ -34,16 +35,20 @@ const CoachDetail = ({
               <div className="cs-rm-20">
                 <DeleteFilled style={{ fontSize: "28px" }} />
               </div>
-              <div onClick={() => setEditMode(true)}>
-                <EditOutlined style={{ fontSize: "28px" }} />
+              <div onClick={() => setEditMode(!editMode)}>
+                {editMode ? (
+                  <CloseOutlined style={{ fontSize: "28px" }} />
+                ) : (
+                  <EditOutlined style={{ fontSize: "28px" }} />
+                )}
               </div>
             </div>
           </div>
         </Col>
       </Row>
 
-      <Row className="cs-tm-20">
-        <Col xs={6}>
+      <Row gutter={[20, 20]} className="cs-tm-20">
+        <Col xs={24} xl={8}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Full Name *</Typography.Text>
             {!editMode ? (
@@ -59,7 +64,7 @@ const CoachDetail = ({
           </Space>
         </Col>
 
-        <Col xs={6}>
+        <Col xs={24} xl={7}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Select Gender *</Typography.Text>
             {!editMode ? (
@@ -79,7 +84,7 @@ const CoachDetail = ({
           </Space>
         </Col>
 
-        <Col xs={6}>
+        <Col xs={24} xl={8}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Date of Birth *</Typography.Text>
             {!editMode ? (
@@ -95,8 +100,8 @@ const CoachDetail = ({
         </Col>
       </Row>
 
-      <Row className="cs-tm-20">
-        <Col xs={6}>
+      <Row gutter={[20, 20]} className="cs-tm-20">
+        <Col xs={24} xl={8}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Phone Number *</Typography.Text>
             {!editMode ? (
@@ -112,7 +117,7 @@ const CoachDetail = ({
           </Space>
         </Col>
 
-        <Col xs={6}>
+        <Col xs={24} xl={8}>
           <Space direction="vertical">
             <Typography.Text type="secondary">Email *</Typography.Text>
             {!editMode ? (
@@ -129,8 +134,8 @@ const CoachDetail = ({
         </Col>
       </Row>
 
-      <Row className="cs-tm-20">
-        <Col xs={6}>
+      <Row gutter={[20, 20]} className="cs-tm-20">
+        <Col xs={14} xl={8}>
           <Space direction="vertical">
             <Typography.Text type="secondary">PAN number *</Typography.Text>
             {!editMode ? (

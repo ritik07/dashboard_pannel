@@ -11,6 +11,26 @@
   color: $plan;
 }
 
-.plan_price {
+.plan_price_rupee {
   color: $white_clr  !important;
+  font-size: pxToRem(22) !important;
+  margin-top: pxToRem(6) !important;
+}
+
+.plan_price {
+  font-size: pxToRem(30) !important;
+  color: $white_clr  !important;
+}
+
+@media screen and (max-width: 480px) {
+  .plan_price_rupee {
+    color: $white_clr  !important;
+    font-size: pxToRem(16) !important;
+    margin-top: pxToRem(0) !important;
+  }
+
+  .plan_price {
+    font-size: pxToRem(16) !important;
+    color: $white_clr  !important;
+  }
 }

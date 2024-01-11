@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import type { CSSProperties } from "react";
 import type { CollapseProps } from "antd";
 import { Card, Col, Collapse, Row, Typography } from "antd";
@@ -8,6 +8,7 @@ import Coach from "./coach/coach";
 import Kyc from "./kyc/kyc";
 import CSS from "./myPlansEditor.module.scss";
 import Uploader from "./uploader/uploader";
+import ModalView from "./modal/modal";
 
 const text = `
   A dog is a type of domesticated animal.
@@ -30,14 +31,14 @@ const getCollapseLabel = ({
 }: IGetCollapseLabel) => {
   return (
     <Row gutter={[20, 20]}>
-      <Col xs={11}>
+      <Col xs={24} xl={11}>
         <Typography.Title level={4}>{header}</Typography.Title>
         <Typography.Text type="secondary">{label}</Typography.Text>
       </Col>
 
-      <Col xs={2}></Col>
+      <Col xs={24} xl={2}></Col>
 
-      <Col xs={11}>
+      <Col xs={24} xl={11}>
         <Typography.Title level={4}>{secondaryHeader}</Typography.Title>
         <Typography.Text type="secondary">{secondaryLabel}</Typography.Text>
       </Col>
@@ -86,6 +87,7 @@ const getItems: (panelStyle: CSSProperties) => CollapseProps["items"] = (
 ];
 
 const MyPlansEditor = () => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const panelStyle: React.CSSProperties = {
     marginBottom: 4,
     // background: token.colorFillAlter,
@@ -104,7 +106,9 @@ const MyPlansEditor = () => {
       />
       <Card className={CSS.card}>
         <div className="cs-dis-flex cs-center">
-          <div className={CSS.save}>Save & Edit</div>
+          <div className={CSS.save} onClick={() => setIsModalOpen(true)}>
+            Save & Edit
+          </div>
 
           <div className={CSS.cancel}>Cancel</div>
         </div>
@@ -120,6 +124,7 @@ const MyPlansEditor = () => {
           <Uploader />
         </Col>
       </Card>
+      {isModalOpen ? <ModalView setIsModalOpen={setIsModalOpen} /> : null}
     </div>
   );
 };

@@ -17,27 +17,30 @@ const CollapsibleCard: React.FC<Props> = (props: Props) => {
 
   return (
     <Row>
-      <Col xs={24}>
+      <Col xs={24} xl={24}>
         <Card
           bordered={false}
+          onClick={toggleCard}
           className={CSS.container}
-          bodyStyle={{ padding:"1.5rem" }}
+          bodyStyle={{ padding: "1.5rem" }}
         >
-          {isExpanded ? (
-            <MinusOutlined onClick={toggleCard} className={CSS.icon} />
-          ) : (
-            <PlusOutlined onClick={toggleCard} className={CSS.icon} />
-          )}          
-            <Typography.Text strong>{props.title}</Typography.Text>
-            {isExpanded && (
-                <div className={CSS.text_container}>
-                    <div className={CSS.text_block}>
-                    <Typography.Text>
-                        {props.text}
-                    </Typography.Text>
-                    </div>
-                </div>
-            )}            
+          <div className="cs-dis-flex">
+            {isExpanded ? (
+              <MinusOutlined className={CSS.icon} />
+            ) : (
+              <PlusOutlined className={CSS.icon} />
+            )}
+            <Typography.Title level={5}>{props.title}</Typography.Title>
+          </div>
+          {isExpanded && (
+            <div className={CSS.text_container}>
+              <div className={CSS.text_block}>
+                <Typography.Title level={5} type="secondary">
+                  {props.text}
+                </Typography.Title>
+              </div>
+            </div>
+          )}
         </Card>
       </Col>
     </Row>

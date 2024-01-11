@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Card, Collapse, Typography } from "antd";
 import CSS from "./card-id.module.scss";
-import { UserOutlined, DownOutlined } from "@ant-design/icons";
+import { UserOutlined, DownOutlined, UpOutlined } from "@ant-design/icons";
 import Detail from "./detail/detail";
 
 interface ICardIDData {
@@ -39,7 +39,11 @@ const CardId = ({ data }: ICardIDData) => {
               className={CSS.view_caoch_btn}
               onClick={() => handleViewDetail(index)}
             >
-              <DownOutlined />
+              {activeKeyStat.length && index == activeKeyStat[0] ? (
+                <UpOutlined />
+              ) : (
+                <DownOutlined />
+              )}
             </div>
           </div>
         </Card>

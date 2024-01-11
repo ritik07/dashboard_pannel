@@ -48,11 +48,15 @@ const Faq = (props: Props) => {
 
   return (
     <div className={CSS.container}>
-      <PageHeader Icon={InfoCircleOutlined} Title="FAQ" Description="Answers to many frequenlty asked questions" />
+      <PageHeader
+        Icon={InfoCircleOutlined}
+        Title="FAQ"
+        Description="Answers to many frequenlty asked questions"
+      />
       <Divider className="cs-tm-20" />
       <div className={CSS.body}>
         <Row gutter={[20, 20]}>
-          <Col xs={12}>
+          <Col xs={24} xl={12}>
             <Row>
               {col1data.map((cardItem, index) => {
                 return (
@@ -67,11 +71,11 @@ const Faq = (props: Props) => {
               })}
             </Row>
           </Col>
-          <Col xs={12}>
+          <Col xs={24} xl={12}>
             <Row>
               {col2data.map((cardItem, index) => {
                 return (
-                  <Col key={index} xs={24} className="cs-bm-20">
+                  <Col key={index} xs={24} xl={24} className="cs-bm-20">
                     <CollapsibleCard
                       key={cardItem.Key}
                       title={cardItem.Title}
@@ -87,7 +91,7 @@ const Faq = (props: Props) => {
       <Divider className="cs-tm-20" />
       <div className={CSS.footer}>
         <Row>
-          <Col xs={12}>
+          <Col xs={24} xl={12}>
             <FeedbackCard
               title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
               text={
