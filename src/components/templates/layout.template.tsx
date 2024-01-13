@@ -7,6 +7,7 @@ import {
   ExclamationCircleOutlined,
   TeamOutlined,
   SettingOutlined,
+  ProfileOutlined,
   UserOutlined,
   LeftOutlined,
   RightOutlined,
@@ -43,7 +44,7 @@ const items: MenuItem[] = [
   getItem("Team Coach", "/team-coach", <TeamOutlined />),
   getItem("FAQ", "/faq", <ExclamationCircleOutlined />),
   getItem("Settings", "/settings", <SettingOutlined />),
-  getItem("Profile", "/profile", <UserOutlined />),
+  getItem("Profile", "/profile", <ProfileOutlined />),
   getItem("Support", "/support", <MessageOutlined />),
 ];
 

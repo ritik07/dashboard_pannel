@@ -21,7 +21,7 @@ const CoachingHistory = () => {
         </div>
         <Card>
           <Row className="cs-lm-20">
-            <Col xl={4}>
+            <Col xs={24} xl={4}>
               <div>
                 <Typography.Text type="secondary">
                   Purchase Date
@@ -30,28 +30,28 @@ const CoachingHistory = () => {
               <Typography.Text>21/12/2011</Typography.Text>
             </Col>
 
-            <Col xl={4}>
+            <Col xs={24} xl={4}>
               <div>
                 <Typography.Text type="secondary">Last Day</Typography.Text>
               </div>
               <Typography.Text>Currently working</Typography.Text>
             </Col>
 
-            <Col xl={4}>
+            <Col xs={24} xl={4}>
               <div>
                 <Typography.Text type="secondary">Status</Typography.Text>
               </div>
               <Typography.Text>Active</Typography.Text>
             </Col>
 
-            <Col xl={4}>
+            <Col xs={24} xl={4}>
               <div>
                 <Typography.Text type="secondary">Renewed on</Typography.Text>
               </div>
               <Typography.Text>21/12/2011</Typography.Text>
             </Col>
 
-            <Col xl={4}>
+            <Col xs={24} xl={4}>
               <div>
                 <Typography.Text type="secondary">Coaching</Typography.Text>
               </div>

@@ -16,6 +16,11 @@
   background-color: #00ad40;
 }
 
+.verified_tick{
+  color: #7979ff;
+  margin-right: 3px;
+}
+
 .verified {
   color: #7979ff !important;
 }
@@ -30,6 +35,14 @@
   color: #fff;
   background-color: #0bdf59;
   padding: 4px 22px;
+  border-radius: 20px;
+}
+
+.inactive {
+  display: flex;
+  color: #fff;
+  background-color: #e70f0f;
+  padding: 4px 18px;
   border-radius: 20px;
 }
 

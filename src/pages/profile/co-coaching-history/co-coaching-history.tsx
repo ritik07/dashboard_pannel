@@ -21,21 +21,21 @@ const CoCoachingHistory = () => {
         </div>
         <Card>
           <Row className="cs-lm-20">
-            <Col xl={4}>
+            <Col xs={24} xl={4}>
               <div>
                 <Typography.Text type="secondary">Joining Date</Typography.Text>
               </div>
               <Typography.Text>21/12/2011</Typography.Text>
             </Col>
 
-            <Col xl={4}>
+            <Col xs={24} xl={4}>
               <div>
                 <Typography.Text type="secondary">Last Day</Typography.Text>
               </div>
               <Typography.Text>Currently working</Typography.Text>
             </Col>
 
-            <Col xl={4}>
+            <Col xs={24} xl={4}>
               <div>
                 <Typography.Text type="secondary">
                   Employment Type
@@ -44,7 +44,7 @@ const CoCoachingHistory = () => {
               <Typography.Text>Full Time</Typography.Text>
             </Col>
 
-            <Col xl={4}>
+            <Col xs={24} xl={4}>
               <div>
                 <Typography.Text type="secondary">Coaching</Typography.Text>
               </div>
