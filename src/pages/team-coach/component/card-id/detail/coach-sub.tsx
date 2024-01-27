@@ -13,7 +13,7 @@ const CoachSub = ({ header }: ICoachDetail) => {
 
       <div className={CSS.subscription}>
         <Row>
-          <Col xs={6}>
+          <Col xs={24} xl={6}>
             <Typography.Title level={5} className={CSS.sub_title}>
               Per Session
             </Typography.Title>
@@ -23,7 +23,7 @@ const CoachSub = ({ header }: ICoachDetail) => {
             </Typography.Title>
           </Col>
 
-          <Col xs={6}>
+          <Col xs={24} xl={6}>
             <Typography.Title level={5} className={CSS.sub_title}>
               Duration
             </Typography.Title>
@@ -33,7 +33,7 @@ const CoachSub = ({ header }: ICoachDetail) => {
             </Typography.Title>
           </Col>
 
-          <Col xs={6}>
+          <Col xs={24} xl={6}>
             <Typography.Title level={5} className={CSS.sub_title}>
               Total Sesion
             </Typography.Title>
@@ -43,9 +43,9 @@ const CoachSub = ({ header }: ICoachDetail) => {
             </Typography.Title>
           </Col>
 
-          <Col xs={1}></Col>
+          <Col xs={24} xl={1}></Col>
 
-          <Col xs={4}>
+          <Col xs={24} xl={4}>
             <Typography.Title level={5} className={CSS.total}>
               Total
             </Typography.Title>
@@ -55,7 +55,7 @@ const CoachSub = ({ header }: ICoachDetail) => {
             </Typography.Title>
           </Col>
 
-          <Col xs={1}></Col>
+          <Col xs={24} xl={1}></Col>
         </Row>
       </div>
     </div>

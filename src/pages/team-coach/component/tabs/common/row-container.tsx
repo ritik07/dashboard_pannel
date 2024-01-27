@@ -30,22 +30,31 @@ const RowContainer = ({ filterBy, data }: IRowContainer) => {
       label: (
         <Card className="custom-team-card-border-none">
           <Row>
-            <Col xs={6}>
+            <Col xs={24} xl={6}>
               <Space direction="horizontal">
                 <ApiFilled className={CSS.icon} />
                 <Typography.Title level={5}>Coach Name</Typography.Title>
               </Space>
             </Col>
 
-            <Col xs={7}></Col>
+            <Col xs={24} xl={7}></Col>
 
-            <Col xs={5} className="cs-dis-flex cs-vt-center">
+            <Col xs={24} xl={5} className="cs-dis-flex cs-vt-center">
               <Typography.Text type="secondary">21/03/2022</Typography.Text>
             </Col>
 
-            <Col xs={4} className="cs-dis-flex cs-vt-center">
-              <Typography.Text type="secondary" className={CSS.pending}>
-                Pending
+            <Col xs={24} xl={6} className="cs-dis-flex cs-vt-center">
+              <Typography.Text
+                type="secondary"
+                className={
+                  item.status === "Approved"
+                    ? CSS.approved
+                    : item.status === "Pending"
+                    ? CSS.pending
+                    : ""
+                }
+              >
+                {item.status}
               </Typography.Text>
             </Col>
           </Row>
@@ -59,7 +68,7 @@ const RowContainer = ({ filterBy, data }: IRowContainer) => {
             </Typography.Title>
           </div>
           <Row className="cs-tm-30">
-            <Col xs={24}>
+            <Col xs={24} xl={24}>
               <Steps current={1} labelPlacement="vertical" items={items} />
             </Col>
           </Row>
@@ -78,8 +87,6 @@ const RowContainer = ({ filterBy, data }: IRowContainer) => {
       ),
     };
   });
-
-  const [filteredData, setFilteredData] = useState(DUMMY_DATA);
 
   return (
     <Collapse
