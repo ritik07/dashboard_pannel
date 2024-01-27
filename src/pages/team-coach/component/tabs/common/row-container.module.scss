@@ -20,7 +20,11 @@
 }
 
 .pending {
-  text-align: right;
+  color: #fbcb0b !important;
+  font-weight: 700 !important;
+}
+
+.approved {
   color: #00ad40 !important;
   font-weight: 700 !important;
 }

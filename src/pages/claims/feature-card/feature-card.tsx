@@ -7,7 +7,7 @@ const FeatureCard = () => {
   return (
     <div className={CSS.container}>
       <Row>
-        <Col xs={24}>
+        <Col xs={24} xl={24}>
           <div className="cs-dis-flex cs-hrz-center">
             <ApiFilled className={CSS.icon} />
           </div>

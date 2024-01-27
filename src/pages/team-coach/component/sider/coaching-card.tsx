@@ -16,7 +16,7 @@ const CoachingCard = () => {
       </div>
       <div className="cs-dis-flex cs-hrz-center cs-tm-20">
         <div>
-          <Typography.Title level={4}>
+          <Typography.Title level={5}>
             Karnataka Sports Academy
           </Typography.Title>
           <div className="cs-dis-flex cs-hrz-center cs-tm-10">

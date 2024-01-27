@@ -15,7 +15,7 @@ const Sider = () => {
   return (
     <div>
       <Row>
-        <Col xs={18}>
+        <Col xs={24} xl={18}>
           <Input
             addonBefore={<SearchOutlined />}
             placeholder="Search for Coach"
@@ -24,8 +24,8 @@ const Sider = () => {
       </Row>
 
       <Fitlers tags={DUMMY_FILTER} />
-      <Row>
-        <Col xs={18}>
+      <Row gutter={[20, 20]}>
+        <Col xs={24} xl={24}>
           <div className="cs-tm-20">
             <CoachingCard />
           </div>
