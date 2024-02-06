@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row, Typography } from "antd";
 import CSS from "./detail.module.scss";
+import imgDots from "./assets/dots.png";
 
 interface ICoachDetail {
   header: string;
@@ -12,6 +13,7 @@ const CoachSub = ({ header }: ICoachDetail) => {
       <Typography.Title level={4}>{header}</Typography.Title>
 
       <div className={CSS.subscription}>
+        <img src={imgDots} className={CSS.img_dots_1} />
         <Row>
           <Col xs={24} xl={6}>
             <Typography.Title level={5} className={CSS.sub_title}>
@@ -57,6 +59,7 @@ const CoachSub = ({ header }: ICoachDetail) => {
 
           <Col xs={24} xl={1}></Col>
         </Row>
+        <img src={imgDots} className={CSS.img_dots_2} />
       </div>
     </div>
   );

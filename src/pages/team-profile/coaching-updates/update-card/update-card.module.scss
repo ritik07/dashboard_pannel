@@ -1,0 +1,39 @@
+.update_card_container {
+  background-color: #fff;
+  min-height: 50px;
+  padding: 12px;
+}
+
+.flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.icon_green {
+  color: #00ad40 !important;
+  font-size: xx-large;
+}
+
+.arrowRight {
+  position: absolute;
+  top: 34%;
+  right: 0px;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #5555f1 !important;
+  z-index: 1;
+}
+
+.arrowLeft {
+  position: absolute;
+  top: 34%;
+  left: -30px;
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #5555f1 !important;
+  z-index: 1;
+}

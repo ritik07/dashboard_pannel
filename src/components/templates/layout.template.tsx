@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import type { MenuProps } from "antd";
-import { Layout, Menu, theme, Button, Typography } from "antd";
+import { Layout, Menu, theme, Button, Typography, Row, Col, Space } from "antd";
 import {
   FileTextOutlined,
   FileOutlined,
@@ -12,10 +12,13 @@ import {
   LeftOutlined,
   RightOutlined,
   MessageOutlined,
+  LogoutOutlined,
+  BlockOutlined,
 } from "@ant-design/icons";
 import CSS from "./layout.template.module.scss";
 import { Outlet, useNavigate } from "react-router-dom";
 import isMobileView from "./mobile";
+import { Footer } from "antd/es/layout/layout";
 
 const { Header, Content, Sider } = Layout;
 
@@ -45,6 +48,7 @@ const items: MenuItem[] = [
   getItem("FAQ", "/faq", <ExclamationCircleOutlined />),
   getItem("Settings", "/settings", <SettingOutlined />),
   getItem("Profile", "/profile", <ProfileOutlined />),
+  getItem("Team Profile", "/team-profile", <ProfileOutlined />),
   getItem("Support", "/support", <MessageOutlined />),
 ];
 
@@ -74,9 +78,45 @@ const LayoutContainer: React.FC = () => {
 
   return (
     <Layout>
-      <Header style={{ display: "flex", alignItems: "center" }}>
-        <div className="demo-logo" />
-        <Typography.Title>ServCL</Typography.Title>
+      <Header>
+        <Row>
+          <Col xl={4}>
+            <Typography.Title>ServCL</Typography.Title>
+          </Col>
+          {!mobileView ? (
+            <>
+              <Col xl={10}></Col>
+              <Col xl={10}>
+                <Row gutter={[20, 20]}>
+                  <Col xl={24} className={CSS.contaier_lt}>
+                    <div style={{ marginRight: "20px" }}>
+                      <Typography.Text className={CSS.update_p}>
+                        Update plan
+                      </Typography.Text>
+                    </div>
+                    <div className={CSS.contaier_lt}>
+                      <Typography.Text className={CSS.org_name}>
+                        <BlockOutlined
+                          style={{
+                            marginRight: "10px",
+                            padding: "5px",
+                            background: "#28b15a",
+                            borderRadius: "50%",
+                            color: "#fff",
+                          }}
+                        />
+                        Karnataka sports ...
+                      </Typography.Text>
+
+                      <div className={CSS.divider_hrz}></div>
+                      <LogoutOutlined />
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            </>
+          ) : null}
+        </Row>
       </Header>
       <Layout>
         <Sider
@@ -126,6 +166,44 @@ const LayoutContainer: React.FC = () => {
           <Content>
             <Outlet />
           </Content>
+          <Footer className="cs-tm-40">
+            <div className={CSS.footer_container}>
+              <Row gutter={[20, 20]}>
+                <Col>
+                  <Typography.Text
+                    style={{ cursor: "pointer" }}
+                    type="secondary"
+                  >
+                    Terms & conditions
+                  </Typography.Text>
+                </Col>
+                <Col>
+                  <Typography.Text
+                    style={{ cursor: "pointer" }}
+                    type="secondary"
+                  >
+                    Privacy policy
+                  </Typography.Text>
+                </Col>
+                <Col>
+                  <Typography.Text
+                    style={{ cursor: "pointer" }}
+                    type="secondary"
+                  >
+                    Report Fraud
+                  </Typography.Text>
+                </Col>
+                <Col>
+                  <Typography.Text
+                    style={{ cursor: "pointer" }}
+                    type="secondary"
+                  >
+                    Feedback
+                  </Typography.Text>
+                </Col>
+              </Row>
+            </div>
+          </Footer>
         </Layout>
       </Layout>
     </Layout>

@@ -8,6 +8,7 @@ import Profile from "../pages/profile/profile";
 import Support from "../pages/support/support";
 import TeamCoach from "../pages/team-coach/team-coach";
 import TeamPlans from "../pages/team-plans/team-plans";
+import TeamProfile from "../pages/team-profile/team-profile";
 
 const Router = () => {
   return (
@@ -20,6 +21,7 @@ const Router = () => {
         <Route path="/faq" element={<Faq />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/team-profile" element={<TeamProfile />} />
         <Route path="/support" element={<Support />} />
       </Route>
     </Routes>
